@@ -16,11 +16,11 @@ const longestSubArray = (arr) => {
         const currentElement = arr[right];
 
         if (currentElement in lastIndexMap) {
-            left = Math.max(lastIndexMap[currentElement], + 1, left)
+            left = Math.max(lastIndexMap[currentElement] + 1, left)
         }
 
         lastIndexMap[currentElement] = right;
-        maxLength = Math.max(maxLength, right - left);
+        maxLength = Math.max(maxLength, right - left + 1);
 
     }
     return maxLength;
@@ -68,4 +68,3 @@ function runTests() {
 }
 
 runTests();
-
