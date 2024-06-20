@@ -29,10 +29,8 @@ const longestSubArray = (arr) => {
 const array = [5, 1, 3, 5, 2, 3, 4, 1];
 console.log(longestSubArray(array));
 
-// Test 2: FAILED (Expected 5, got 4)
 // Test 13: FAILED (Expected 5, got 4)
-// Test 17: FAILED (Expected 8, got 7)
-// Test 18: FAILED (Expected 10, got 9)
+// Test 14: FAILED (Expected 5, got 6)
 
 function runTests() {
     const tests = [
